@@ -1,0 +1,36 @@
+ Variable: variable used to stored values to achieve the project requirement.
+Types of variables:
+	1) Local variable.
+	2) Instance variable.
+	3) Static variable.
+	
+Class Test\
+{	variables
+	method 
+	constructors
+	instance block 
+	static block
+	
+}
+Local variable:
+==============
+1) variable which is declared inside the method or constructors or blocks is called local variable.
+2) scope: inside the  method /constructors we can use the local variable.
+
+	void m1 () // memory  allocated 
+	{
+		int a =6; //local variable 
+		System.out.println(a); // possible 
+	}	memory  released 
+	void m2 ()
+	{
+	System.out.println(a); // not possible
+	}
+	
+3) Memory: local variable memory is allocated when method start & memory released when the method is completed.
+4) Local variable stored in stack memory.\
+
+..................................................................
+Instance variable.
+================
+	
