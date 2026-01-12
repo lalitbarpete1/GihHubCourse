@@ -33,4 +33,7 @@ Local variable:
 ..................................................................
 Instance variable.
 ================
-	
+1) variable which is declared inside the class but out side the method is called Instance variable.
+2) scope: inside the class all method,constructor and instance /static blocks able to access the instance variable.
+3) Memory: Instance variable memory is allocated when object is created & memory released when object is destroyed.
+4) Instance variable stored in heap memory.
