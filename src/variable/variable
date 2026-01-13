@@ -16,7 +16,8 @@ Local variable:
 ==============
 1) variable which is declared inside the method or constructors or blocks is called local variable.
 2) scope: inside the  method /constructors we can use the local variable.
-
+3) Memory: local variable memory is allocated when method start & memory released when the method is completed.
+4) Local variable stored in stack memory.
 	void m1 () // memory  allocated 
 	{
 		int a =6; //local variable 
@@ -27,9 +28,6 @@ Local variable:
 	System.out.println(a); // not possible
 	}
 	
-3) Memory: local variable memory is allocated when method start & memory released when the method is completed.
-4) Local variable stored in stack memory.\
-
 ..................................................................
 Instance variable.
 ================
@@ -37,3 +35,23 @@ Instance variable.
 2) scope: inside the class all method,constructor and instance /static blocks able to access the instance variable.
 3) Memory: Instance variable memory is allocated when object is created & memory released when object is destroyed.
 4) Instance variable stored in heap memory.
+
+public class InstanceVariable {
+	
+	int a=10; //instance variable
+	int b=20;
+	int c=30;
+	public static void main(String[] args) { 
+		// static area so we need to create object then use the instance variable
+		// execution will start from main method
+		InstanceVariable t= new InstanceVariable();
+		System.out.println(t.a);
+		System.out.println(t.b);
+		t.m1();	
+	}
+	void m1() // instance method we can use the instance variable directly 
+	{
+	System.out.println(c);
+	}
+}
+........................................................................
