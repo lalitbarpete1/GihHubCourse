@@ -1,0 +1,73 @@
+Method : A method is a block of code where we write the business logic of an application.
+
+Types of Methods
+Instance Method
+Static Method
+
+1. Instance Method
+Definition: An instance method belongs to an object of a class.
+
+Key Points:
+Accessed using object reference.
+Memory is allocated when the object is created.
+Can directly access instance variables.
+Can access static members directly.
+
+Example:
+class Demo {
+    int a = 10;
+
+    void show() {
+        System.out.println(a);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Demo d = new Demo();
+        d.show();
+    }
+}
+
+2. Static Method
+Definition: A static method belongs to the class, not to any object.
+
+Key Points:
+Accessed using class name.
+Memory is allocated during class loading.
+Can directly access only static variables.
+Cannot directly access instance variables.
+
+Example:
+class Demo {
+    static int b = 20;
+
+    static void display() {
+        System.out.println(b);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Demo.display();
+    }
+}
+
+Difference Between Instance and Static Method
+Instance Method										Static Method
+Access using object								Access using class name
+Memory at object creation						Memory at class loading
+Can access instance variables					Cannot access instance variables directly
+Object required									Object not required
+
+
+Method Syntax : 
+==============
+modifier returnType methodName(parameters) throws Exception {
+    // method body
+}
+
+Modifier list  : public, private, protected, static, final, abstract
+Return type : void → returns nothing, int, String, double, boolean
+Method name : m1(int a), m2 (string b)
+Method Signature = Method Name + Parameter List

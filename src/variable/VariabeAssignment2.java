@@ -10,8 +10,8 @@ public class VariabeAssignment2 {
 	void m1() {
 		System.out.println(age);
 		System.out.println(mark);
-		System.out.println(c);
-		System.out.println(d);
+		System.out.println(VariabeAssignment2.c);
+		System.out.println(VariabeAssignment2.d);
 
 	}
 

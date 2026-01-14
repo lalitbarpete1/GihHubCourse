@@ -146,5 +146,13 @@ CLASS VS OBJECT
 1. Class is is a logical entity contains logic of application. object is physical entity represent the memory.
 2. Class is a blue print document that decide the object creation. 
 3. single blue print class having  -> multiple object use memory  
-4.  Declareation using Class keyword - new keyword.
+4.  declaration  using Class keyword - new keyword.
 
+=========================
+instance  VS static variable difference   
+-------------------------------------- 
+* Instance variable memory is created at the time of object creation  for every object one copy of memory is created.
+* Static variable only one memory is created at the time of class loading / creation, one copy if memory is over ride everytime.
+
+-> every student  name is instance variable 
+-> every institute  name is static variable 
