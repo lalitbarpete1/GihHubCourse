@@ -55,3 +55,96 @@ public class InstanceVariable {
 	}
 }
 ........................................................................
+
+Static variable
+----------------
+1. a variable which is declared inside the class but out side the method with static modifier is called Instance variable.
+2. Static variable memory is allocated at the time of class loading.
+3. Scope: In the class.
+4. Static variable stored in non Heap memory.
+
+class staticvariable1 
+{
+	static int a=10;
+	static int b=20; //static variables 
+	void m1() // instance method 
+	{
+		System.out.println(staticvariable1.a);
+	}
+	public static void main(String[] args) 
+	{
+		staticvariable1 t = new staticvariable1();
+		t.m1();
+		System.out.println(staticvariable1.a);
+		System.out.println(staticvariable1.b);
+	}
+}
+-----------
+assignment1 
+-----------
+class assignment1
+{
+	int a=10; // instance variable
+	int b=20;
+	static void m1() // static method
+	{
+		assignment1 t= new assignment1();
+		System.out.println(t.a);
+		System.out.println(t.b);
+	}
+	static void m2() // static method
+	{
+		assignment1 t= new assignment1();
+		System.out.println(t.a);
+		System.out.println(t.b);
+	}
+
+	public static void main (String [] arg)
+	{
+	assignment1 t= new assignment1();
+	t.m1();
+	t.m2();
+	}
+}
+-----------
+assignment2
+-----------
+class assignment2
+{
+
+	int a =10;
+	int b=20;
+	static int c=30;
+	static int d=40;
+	void m1()
+	{
+		System.out.println(a);
+		System.out.println(b);
+		assignment2 t= new assignment2();
+		System.out.println(t.c);
+		System.out.println(t.d);
+	}
+	static void m2()
+	{
+		assignment2 t = new assignment2();
+		System.out.println(t.a);
+		System.out.println(t.b);
+		System.out.println(assignment2.c);
+		System.out.println(assignment2.d);
+	}
+public static void main (String [] arg)
+	{
+		assignment2 t=new assignment2();
+		t.m1();
+		t.m2();
+
+	}
+}
+
+=========================
+CLASS VS OBJECT 
+1. Class is is a logical entity contains logic of application. object is physical entity represent the memory.
+2. Class is a blue print document that decide the object creation. 
+3. single blue print class having  -> multiple object use memory  
+4.  Declareation using Class keyword - new keyword.
+
